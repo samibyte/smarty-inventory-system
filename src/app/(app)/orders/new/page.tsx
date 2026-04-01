@@ -95,7 +95,7 @@ export default function NewOrderPage() {
     defaultValues: { customerName: "" },
   });
 
-  const onSubmit = async (values: OrderInput) => {
+  const onSubmit = async (values: Pick<OrderInput, "customerName">) => {
     if (lineItems.length === 0) {
       setGlobalError("Add at least one product.");
       return;
