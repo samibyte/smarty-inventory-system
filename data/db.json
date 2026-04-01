@@ -1,0 +1,775 @@
+{
+  "users": [
+    {
+      "id": "user_demo",
+      "name": "Demo User",
+      "email": "demo@example.com",
+      "passwordHash": "$2b$10$2LpOmEDH/FLXryYriCuGKeDb5lSlnnlE5A2CmxvLWEhpNe9K0oG8e",
+      "role": "admin",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "user_admin",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "passwordHash": "$2b$10$MXrG7KEi5nmw9nOfGb/7SuB49MXVQcOB5.6rLR.t5JptKsUuftrKO",
+      "role": "admin",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_electronics",
+      "name": "Electronics",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "cat_clothing",
+      "name": "Clothing",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "cat_grocery",
+      "name": "Grocery",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "cat_furniture",
+      "name": "Furniture",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_iphone",
+      "name": "iPhone 15",
+      "categoryId": "cat_electronics",
+      "price": 999.99,
+      "stockQuantity": 4,
+      "minStockThreshold": 6,
+      "status": "active",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_headphone",
+      "name": "Sony WH-1000XM5",
+      "categoryId": "cat_electronics",
+      "price": 279.99,
+      "stockQuantity": 3,
+      "minStockThreshold": 8,
+      "status": "active",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_tshirt",
+      "name": "Cotton Crew T-Shirt",
+      "categoryId": "cat_clothing",
+      "price": 24.99,
+      "stockQuantity": 35,
+      "minStockThreshold": 10,
+      "status": "active",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_jeans",
+      "name": "Slim Fit Jeans",
+      "categoryId": "cat_clothing",
+      "price": 59.99,
+      "stockQuantity": 22,
+      "minStockThreshold": 8,
+      "status": "active",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_rice",
+      "name": "Jasmine Rice 5kg",
+      "categoryId": "cat_grocery",
+      "price": 14.49,
+      "stockQuantity": 0,
+      "minStockThreshold": 12,
+      "status": "out_of_stock",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_chair",
+      "name": "Ergonomic Mesh Chair",
+      "categoryId": "cat_furniture",
+      "price": 329.99,
+      "stockQuantity": 10,
+      "minStockThreshold": 4,
+      "status": "active",
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "updatedAt": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_0_ds4hj",
+      "name": "Logitech MX Master 3S",
+      "categoryId": "cat_electronics",
+      "price": 99.99,
+      "stockQuantity": 18,
+      "minStockThreshold": 6,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_1_1s4xt",
+      "name": "Mechanical Keyboard TKL",
+      "categoryId": "cat_electronics",
+      "price": 89.99,
+      "stockQuantity": 11,
+      "minStockThreshold": 5,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_2_yaub0",
+      "name": "JBL Flip 6 Speaker",
+      "categoryId": "cat_electronics",
+      "price": 129.99,
+      "stockQuantity": 2,
+      "minStockThreshold": 8,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_3_xuspp",
+      "name": "Adjustable LED Desk Lamp",
+      "categoryId": "cat_furniture",
+      "price": 44.99,
+      "stockQuantity": 24,
+      "minStockThreshold": 7,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_4_8jhzg",
+      "name": "Hydro Flask 32oz",
+      "categoryId": "cat_grocery",
+      "price": 49.95,
+      "stockQuantity": 20,
+      "minStockThreshold": 8,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_5_wu3a4",
+      "name": "Ethiopian Coffee Beans 500g",
+      "categoryId": "cat_grocery",
+      "price": 18.99,
+      "stockQuantity": 30,
+      "minStockThreshold": 10,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_6_ab8nm",
+      "name": "Non-Slip Yoga Mat 6mm",
+      "categoryId": "cat_clothing",
+      "price": 39.99,
+      "stockQuantity": 3,
+      "minStockThreshold": 7,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_7_6c4vi",
+      "name": "Fitbit Charge 6",
+      "categoryId": "cat_electronics",
+      "price": 159.99,
+      "stockQuantity": 2,
+      "minStockThreshold": 5,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_8_jk1uj",
+      "name": "Osprey Daylite Backpack 26L",
+      "categoryId": "cat_clothing",
+      "price": 75.0,
+      "stockQuantity": 14,
+      "minStockThreshold": 6,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_9_q03ra",
+      "name": "Jabra Elite 4 Earbuds",
+      "categoryId": "cat_electronics",
+      "price": 119.99,
+      "stockQuantity": 9,
+      "minStockThreshold": 5,
+      "status": "active",
+      "createdAt": "2026-02-14T08:15:00.000Z",
+      "updatedAt": "2026-02-14T08:15:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_001",
+      "orderNumber": "ORD-1001",
+      "customerName": "Sarah Mitchell",
+      "items": [
+        {
+          "productId": "prod_tshirt",
+          "productName": "Cotton Crew T-Shirt",
+          "quantity": 3,
+          "unitPrice": 24.99,
+          "subtotal": 74.97
+        },
+        {
+          "productId": "prod_jeans",
+          "productName": "Slim Fit Jeans",
+          "quantity": 1,
+          "unitPrice": 59.99,
+          "subtotal": 59.99
+        }
+      ],
+      "totalPrice": 134.96,
+      "status": "delivered",
+      "createdAt": "2026-03-10T10:20:00.000Z",
+      "updatedAt": "2026-03-13T14:00:00.000Z"
+    },
+    {
+      "id": "ord_002",
+      "orderNumber": "ORD-1002",
+      "customerName": "James Okafor",
+      "items": [
+        {
+          "productId": "prod_iphone",
+          "productName": "iPhone 15",
+          "quantity": 1,
+          "unitPrice": 999.99,
+          "subtotal": 999.99
+        }
+      ],
+      "totalPrice": 999.99,
+      "status": "shipped",
+      "createdAt": "2026-03-20T09:00:00.000Z",
+      "updatedAt": "2026-03-21T11:30:00.000Z"
+    },
+    {
+      "id": "ord_003",
+      "orderNumber": "ORD-1003",
+      "customerName": "Priya Sharma",
+      "items": [
+        {
+          "productId": "prod_headphone",
+          "productName": "Sony WH-1000XM5",
+          "quantity": 1,
+          "unitPrice": 279.99,
+          "subtotal": 279.99
+        },
+        {
+          "productId": "prod_chair",
+          "productName": "Ergonomic Mesh Chair",
+          "quantity": 1,
+          "unitPrice": 329.99,
+          "subtotal": 329.99
+        }
+      ],
+      "totalPrice": 609.98,
+      "status": "confirmed",
+      "createdAt": "2026-03-28T13:45:00.000Z",
+      "updatedAt": "2026-03-28T13:45:00.000Z"
+    },
+    {
+      "id": "ord_004",
+      "orderNumber": "ORD-1004",
+      "customerName": "Marcus Webb",
+      "items": [
+        {
+          "productId": "prod_tshirt",
+          "productName": "Cotton Crew T-Shirt",
+          "quantity": 4,
+          "unitPrice": 24.99,
+          "subtotal": 99.96
+        }
+      ],
+      "totalPrice": 99.96,
+      "status": "pending",
+      "createdAt": "2026-03-31T07:30:00.000Z",
+      "updatedAt": "2026-03-31T07:30:00.000Z"
+    }
+  ],
+  "restockQueue": [
+    {
+      "id": "prod_iphone",
+      "productId": "prod_iphone",
+      "productName": "iPhone 15",
+      "currentStock": 4,
+      "minThreshold": 6,
+      "priority": "high",
+      "addedAt": "2026-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "prod_headphone",
+      "productId": "prod_headphone",
+      "productName": "Sony WH-1000XM5",
+      "currentStock": 3,
+      "minThreshold": 8,
+      "priority": "high",
+      "addedAt": "2026-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "prod_rice",
+      "productId": "prod_rice",
+      "productName": "Jasmine Rice 5kg",
+      "currentStock": 0,
+      "minThreshold": 12,
+      "priority": "high",
+      "addedAt": "2026-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_2_yaub0",
+      "productId": "prod_demo_1774852381202_2_yaub0",
+      "productName": "JBL Flip 6 Speaker",
+      "currentStock": 2,
+      "minThreshold": 8,
+      "priority": "high",
+      "addedAt": "2026-03-28T09:00:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_6_ab8nm",
+      "productId": "prod_demo_1774852381202_6_ab8nm",
+      "productName": "Non-Slip Yoga Mat 6mm",
+      "currentStock": 3,
+      "minThreshold": 7,
+      "priority": "medium",
+      "addedAt": "2026-03-28T09:00:00.000Z"
+    },
+    {
+      "id": "prod_demo_1774852381202_7_6c4vi",
+      "productId": "prod_demo_1774852381202_7_6c4vi",
+      "productName": "Fitbit Charge 6",
+      "currentStock": 2,
+      "minThreshold": 5,
+      "priority": "medium",
+      "addedAt": "2026-03-28T09:00:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log_demo_1774852635622_39_b667",
+      "action": "restock_queue_removed",
+      "description": "Product \"Slim Fit Jeans\" removed from Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-22T08:14:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_38_8m49",
+      "action": "product_deleted",
+      "description": "Product \"Samsung Galaxy S24\" deleted",
+      "userId": "user_demo",
+      "createdAt": "2026-03-22T09:14:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_37_zyi9",
+      "action": "order_created",
+      "description": "Order ORD-1001 created for Sarah Mitchell",
+      "userId": "user_demo",
+      "createdAt": "2026-03-22T10:14:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_36_mfpk",
+      "action": "restock_queue_removed",
+      "description": "Product \"Logitech MX Master 3S\" removed from Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-22T11:14:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_35_m30c",
+      "action": "restock_queue_removed",
+      "description": "Product \"Ergonomic Mesh Chair\" removed from Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-22T12:14:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_34_mqgn",
+      "action": "stock_updated",
+      "description": "Stock updated for \"Sony WH-1000XM5\"",
+      "userId": "user_demo",
+      "createdAt": "2026-03-23T08:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_33_xzxo",
+      "action": "product_restocked",
+      "description": "Product \"Slim Fit Jeans\" was restocked",
+      "userId": "user_demo",
+      "createdAt": "2026-03-23T10:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_32_6xfn",
+      "action": "order_status_updated",
+      "description": "Order ORD-1001 marked as Shipped",
+      "userId": "user_demo",
+      "createdAt": "2026-03-23T14:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_31_b4ag",
+      "action": "stock_updated",
+      "description": "Stock updated for \"Ergonomic Mesh Chair\"",
+      "userId": "user_demo",
+      "createdAt": "2026-03-24T09:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_30_sfiu",
+      "action": "restock_queue_added",
+      "description": "Product \"Ergonomic Mesh Chair\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-24T09:05:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_29_d83r",
+      "action": "category_deleted",
+      "description": "Category \"Furniture\" deleted",
+      "userId": "user_demo",
+      "createdAt": "2026-03-24T11:20:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_28_frtt",
+      "action": "product_created",
+      "description": "Product \"Non-Slip Yoga Mat 6mm\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-25T08:45:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_27_jt34",
+      "action": "stock_updated",
+      "description": "Stock updated for \"Non-Slip Yoga Mat 6mm\"",
+      "userId": "user_demo",
+      "createdAt": "2026-03-25T09:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_26_hjdu",
+      "action": "product_created",
+      "description": "Product \"Jabra Elite 4 Earbuds\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-25T10:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_25_gfjd",
+      "action": "product_created",
+      "description": "Product \"Cotton Crew T-Shirt\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-25T11:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_24_p8qj",
+      "action": "product_restocked",
+      "description": "Product \"Non-Slip Yoga Mat 6mm\" was restocked",
+      "userId": "user_demo",
+      "createdAt": "2026-03-25T14:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_23_l9h5",
+      "action": "order_status_updated",
+      "description": "Order ORD-1004 marked as Shipped",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T08:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_22_9bmg",
+      "action": "order_cancelled",
+      "description": "Order ORD-1003 cancelled by demo workflow",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T10:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_21_bf1h",
+      "action": "product_created",
+      "description": "Product \"Sony WH-1000XM5\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T11:15:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_20_bafz",
+      "action": "category_created",
+      "description": "Category \"Electronics\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T13:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_19_ek39",
+      "action": "category_created",
+      "description": "Category \"Furniture\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T13:05:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_18_h8sb",
+      "action": "category_created",
+      "description": "Category \"Grocery\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-26T13:10:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_17_t1i4",
+      "action": "order_status_updated",
+      "description": "Order ORD-1002 marked as Pending",
+      "userId": "user_demo",
+      "createdAt": "2026-03-27T09:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_16_3g6k",
+      "action": "order_status_updated",
+      "description": "Order ORD-1002 marked as Shipped",
+      "userId": "user_demo",
+      "createdAt": "2026-03-27T09:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_15_m6vm",
+      "action": "order_status_updated",
+      "description": "Order ORD-1002 marked as Cancelled",
+      "userId": "user_demo",
+      "createdAt": "2026-03-27T10:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_14_gfg8",
+      "action": "order_status_updated",
+      "description": "Order ORD-1003 marked as Pending",
+      "userId": "user_demo",
+      "createdAt": "2026-03-27T11:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_13_slgn",
+      "action": "stock_updated",
+      "description": "Stock updated for \"Slim Fit Jeans\"",
+      "userId": "user_demo",
+      "createdAt": "2026-03-27T14:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_12_3uqf",
+      "action": "order_created",
+      "description": "Order ORD-1001 created for Sarah Mitchell",
+      "userId": "user_demo",
+      "createdAt": "2026-03-28T08:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_11_elxe",
+      "action": "restock_queue_added",
+      "description": "Product \"Osprey Daylite Backpack 26L\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-28T09:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_10_dc7q",
+      "action": "product_restocked",
+      "description": "Product \"Logitech MX Master 3S\" was restocked",
+      "userId": "user_demo",
+      "createdAt": "2026-03-28T11:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_9_259o",
+      "action": "product_updated",
+      "description": "Product \"iPhone 15\" updated",
+      "userId": "user_demo",
+      "createdAt": "2026-03-28T13:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_8_clr5",
+      "action": "order_created",
+      "description": "Order ORD-1004 created for Marcus Webb",
+      "userId": "user_demo",
+      "createdAt": "2026-03-29T07:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_7_ytqx",
+      "action": "restock_queue_added",
+      "description": "Product \"Adjustable LED Desk Lamp\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-29T09:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_6_n8ww",
+      "action": "order_cancelled",
+      "description": "Order ORD-1002 cancelled by demo workflow",
+      "userId": "user_demo",
+      "createdAt": "2026-03-29T10:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_5_ho0h",
+      "action": "category_deleted",
+      "description": "Category \"Clothing\" deleted",
+      "userId": "user_demo",
+      "createdAt": "2026-03-29T12:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_4_twre",
+      "action": "product_updated",
+      "description": "Product \"Fitbit Charge 6\" updated",
+      "userId": "user_demo",
+      "createdAt": "2026-03-29T14:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_3_5l3t",
+      "action": "order_created",
+      "description": "Order ORD-1002 created for James Okafor",
+      "userId": "user_demo",
+      "createdAt": "2026-03-30T08:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_2_ampi",
+      "action": "category_created",
+      "description": "Category \"Furniture\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-30T09:00:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_1_kjvq",
+      "action": "product_created",
+      "description": "Product \"Logitech MX Master 3S\" created",
+      "userId": "user_demo",
+      "createdAt": "2026-03-30T10:30:00.000Z"
+    },
+    {
+      "id": "log_demo_1774852635622_0_gh60",
+      "action": "product_restocked",
+      "description": "Product \"Ergonomic Mesh Chair\" was restocked",
+      "userId": "user_demo",
+      "createdAt": "2026-03-30T14:00:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_9_p",
+      "action": "product_created",
+      "description": "Product \"Jabra Elite 4 Earbuds\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_8_p",
+      "action": "product_created",
+      "description": "Product \"Osprey Daylite Backpack 26L\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_7_p",
+      "action": "product_created",
+      "description": "Product \"Fitbit Charge 6\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_7_q",
+      "action": "restock_queue_added",
+      "description": "Product \"Fitbit Charge 6\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_6_p",
+      "action": "product_created",
+      "description": "Product \"Non-Slip Yoga Mat 6mm\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_6_q",
+      "action": "restock_queue_added",
+      "description": "Product \"Non-Slip Yoga Mat 6mm\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_5_p",
+      "action": "product_created",
+      "description": "Product \"Ethiopian Coffee Beans 500g\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_4_p",
+      "action": "product_created",
+      "description": "Product \"Hydro Flask 32oz\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_3_p",
+      "action": "product_created",
+      "description": "Product \"Adjustable LED Desk Lamp\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_2_p",
+      "action": "product_created",
+      "description": "Product \"JBL Flip 6 Speaker\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_2_q",
+      "action": "restock_queue_added",
+      "description": "Product \"JBL Flip 6 Speaker\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_1_p",
+      "action": "product_created",
+      "description": "Product \"Mechanical Keyboard TKL\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:15:00.000Z"
+    },
+    {
+      "id": "log_1774852381202_0_p",
+      "action": "product_created",
+      "description": "Product \"Logitech MX Master 3S\" created (demo seed)",
+      "userId": "user_demo",
+      "createdAt": "2026-02-14T08:14:00.000Z"
+    },
+    {
+      "id": "log_001",
+      "action": "order_created",
+      "description": "Order ORD-1001 created by Demo User",
+      "userId": "user_demo",
+      "createdAt": "2026-03-10T10:20:00.000Z"
+    },
+    {
+      "id": "log_002",
+      "action": "order_created",
+      "description": "Order ORD-1002 created by Demo User",
+      "userId": "user_demo",
+      "createdAt": "2026-03-20T09:00:00.000Z"
+    },
+    {
+      "id": "log_003",
+      "action": "order_status_updated",
+      "description": "Order ORD-1002 marked as Shipped",
+      "userId": "user_demo",
+      "createdAt": "2026-03-21T11:30:00.000Z"
+    },
+    {
+      "id": "log_004",
+      "action": "restock_queue_added",
+      "description": "Product \"iPhone 15\" added to Restock Queue",
+      "userId": "user_demo",
+      "createdAt": "2026-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "log_005",
+      "action": "order_created",
+      "description": "Order ORD-1004 created by Demo User",
+      "userId": "user_demo",
+      "createdAt": "2026-03-31T07:30:00.000Z"
+    }
+  ],
+  "meta": {
+    "orderCounter": 1004
+  }
+}
