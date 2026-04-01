@@ -59,6 +59,12 @@ export default function ProductsPage() {
   const getCategoryName = (id: string) =>
     categories.find((c) => c.id === id)?.name || "—";
 
+  const getStatusLabel = (status: string) => {
+    if (status === "active") return "Active";
+    if (status === "out_of_stock") return "Out of Stock";
+    return "All Status";
+  };
+
   const handleDelete = async () => {
     if (!deleteTarget) return;
     setDeleting(true);
@@ -147,7 +153,9 @@ export default function ProductsPage() {
           }}
         >
           <SelectTrigger className="w-40 h-9 border-border text-sm">
-            <SelectValue placeholder="All Status" />
+            <SelectValue placeholder="All Status">
+              {statusFilter ? getStatusLabel(statusFilter) : "All Status"}
+            </SelectValue>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All Status</SelectItem>
