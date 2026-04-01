@@ -89,7 +89,7 @@ export default function NewOrderPage() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<OrderInput>({
+  } = useForm<Pick<OrderInput, "customerName">>({
     resolver: zodResolver(orderSchema.pick({ customerName: true })),
     mode: "onBlur",
     defaultValues: { customerName: "" },
