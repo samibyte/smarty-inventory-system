@@ -65,7 +65,7 @@ export function TopNav({ onMenuClick = () => {} }: TopNavProps) {
     : "U";
 
   return (
-    <header className="h-14 border-b border-slate-200 bg-white/80 backdrop-blur-sm flex items-center justify-between px-4 lg:px-6 shrink-0 sticky top-0 z-10">
+    <header className="h-14 border-b border-slate-200 bg-background/80 backdrop-blur-sm flex items-center justify-between px-4 lg:px-6 shrink-0 sticky top-0 z-10">
       <button
         className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors"
         onClick={onMenuClick}

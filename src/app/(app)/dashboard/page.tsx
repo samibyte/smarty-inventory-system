@@ -72,14 +72,6 @@ export default function DashboardPage() {
       {/* Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
-          title="Orders Today"
-          value={stats.totalOrdersToday}
-          icon={ShoppingCart}
-          colorClass="text-primary"
-          bgClass="bg-primary/10"
-          description="New orders placed"
-        />
-        <StatCard
           title="Pending Orders"
           value={stats.pendingOrders}
           icon={Clock}
@@ -88,12 +80,12 @@ export default function DashboardPage() {
           description="Awaiting processing"
         />
         <StatCard
-          title="Low Stock Items"
-          value={stats.lowStockCount}
-          icon={AlertTriangle}
-          colorClass="text-accent"
-          bgClass="bg-accent/10"
-          description="Need restocking"
+          title="Orders Today"
+          value={stats.totalOrdersToday}
+          icon={ShoppingCart}
+          colorClass="text-primary"
+          bgClass="bg-primary/10"
+          description="New orders placed"
         />
         <StatCard
           title="Revenue Today"
@@ -102,6 +94,14 @@ export default function DashboardPage() {
           colorClass="text-accent"
           bgClass="bg-accent/10"
           description={`${stats.completedOrders} orders delivered`}
+        />
+        <StatCard
+          title="Low Stock Items"
+          value={stats.lowStockCount}
+          icon={AlertTriangle}
+          colorClass="text-accent"
+          bgClass="bg-accent/10"
+          description="Need restocking"
         />
       </div>
 
